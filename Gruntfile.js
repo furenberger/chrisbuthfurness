@@ -9,11 +9,11 @@ module.exports = function(grunt) {
           yuicompress: false,
           optimization: 2,
           sourceMap: true,
-          sourceMapFilename: "less/creative.css.map",
-          sourceMapBasepath: "less/"
+          sourceMapFilename: "css/style.css.map",
+          sourceMapBasepath: "css/"
         },
         files: {
-          "less/creative.css": "less/creative.less" // destination file and source file
+          "css/style.css": "less/style.less" // destination file and source file
         }
       }
     },
