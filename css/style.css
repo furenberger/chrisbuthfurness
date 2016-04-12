@@ -190,10 +190,11 @@ header {
   position: relative;
   width: 100%;
   min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  -o-background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   background-image: url('../img/portfolio-thumb/T_C_Composed.jpg');
   text-align: center;
@@ -321,6 +322,139 @@ header .header-content .header-content-inner p {
   padding-right: 0;
   padding-left: 0;
 }
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #222;
+}
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #222;
+}
+img::selection {
+  color: white;
+  background: transparent;
+}
+img::-moz-selection {
+  color: white;
+  background: transparent;
+}
+body {
+  webkit-tap-highlight-color: #222;
+}
+/*
+div[class="row"] {
+    border: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+div[class^="col-"] {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+*/
+/* ---- isotope ---- */
+.grid {
+  color: #888888;
+}
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* ---- .grid-item ---- */
+.grid-sizer,
+.grid-item {
+  width: 49%;
+}
+.grid-item {
+  float: left;
+  /*border: solid black 1px;*/
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  padding: 15px;
+}
+@media (min-width: 600px) {
+  .grid-sizer,
+  .grid-item {
+    width: 49%;
+  }
+}
+@media (min-width: 720px) {
+  .grid-sizer,
+  .grid-item {
+    width: 32%;
+  }
+}
+@media (min-width: 1000px) {
+  .grid-sizer,
+  .grid-item {
+    width: 24%;
+  }
+}
+.grid {
+  text-align: center;
+}
+.gutter-sizer {
+  width: 1%;
+}
+/* ---- isotope ---- */
+/* ---- button ----- */
+.button {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  background: #EEE;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  color: #222;
+  font-weight: 500;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+.button-nobutton {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  /*background: #EEE;*/
+  border: none;
+  border-radius: 7px;
+  /*background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );*/
+  color: #222;
+  font-weight: 500;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+}
+.button:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  color: #222;
+}
+.button:active,
+.button.is-checked,
+.button.is-selected {
+  background-color: #28F;
+}
+.button.is-checked,
+.button.is-selected {
+  color: white;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
+}
+.button:active {
+  box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8);
+}
+/* hide radio inputs */
+.button input[type="radio"] {
+  display: none;
+}
+/* ---- button ---- */
 .btn-default {
   color: #222;
   background-color: white;
@@ -424,126 +558,26 @@ fieldset[disabled] .btn-primary.active {
   font-weight: 700;
   text-transform: uppercase;
 }
+.img-button {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+}
+.img-button img {
+  height: 100px;
+  width: 100px;
+}
+.button-half {
+  height: 55px;
+  width: 100px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 55px;
+}
 .btn-xl {
   padding: 15px 30px;
 }
-::-moz-selection {
-  color: white;
-  text-shadow: none;
-  background: #222;
-}
-::selection {
-  color: white;
-  text-shadow: none;
-  background: #222;
-}
-img::selection {
-  color: white;
-  background: transparent;
-}
-img::-moz-selection {
-  color: white;
-  background: transparent;
-}
-body {
-  webkit-tap-highlight-color: #222;
-}
-/*
-div[class="row"] {
-    border: 1px dotted rgba(0, 0, 0, 0.5);
-}
-
-div[class^="col-"] {
-    background-color: rgba(255, 0, 0, 0.2);
-}
-*/
-/* ---- isotope ---- */
-.grid {
-  color: #888888;
-}
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-/* ---- .grid-item ---- */
-.grid-sizer,
-.grid-item {
-  width: 49%;
-}
-.grid-item {
-  float: left;
-  /*border: solid black 1px;*/
-  border-color: rgba(255, 255, 255, 0.4);
-}
-.grid-item img {
-  display: block;
-  max-width: 100%;
-  padding: 15px;
-}
-@media (min-width: 600px) {
-  .grid-sizer,
-  .grid-item {
-    width: 49%;
-  }
-}
-@media (min-width: 720px) {
-  .grid-sizer,
-  .grid-item {
-    width: 32%;
-  }
-}
-@media (min-width: 1000px) {
-  .grid-sizer,
-  .grid-item {
-    width: 24%;
-  }
-}
-.grid {
-  text-align: center;
-}
-.gutter-sizer {
-  width: 1%;
-}
-/* ---- isotope ---- */
-/* ---- button ----- */
-.button {
-  display: inline-block;
-  padding: 5px 15px;
-  margin-bottom: 10px;
-  background: #EEE;
-  border: none;
-  border-radius: 7px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-  color: #222;
-  font-weight: 500;
-  text-shadow: 0 1px white;
-  cursor: pointer;
-}
-.button:hover {
-  background-color: #8CF;
-  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
-  color: #222;
-}
-.button:active,
-.button.is-checked,
-.button.is-selected {
-  background-color: #28F;
-}
-.button.is-checked,
-.button.is-selected {
-  color: white;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
-}
-.button:active {
-  box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8);
-}
-/* hide radio inputs */
-.button input[type="radio"] {
-  display: none;
-}
-/* ---- button ---- */
 /* ---- button-group ---- */
 .button-group:after {
   content: '';

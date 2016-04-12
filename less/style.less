@@ -213,7 +213,8 @@ header {
     position: relative;
     width: 100%;
     min-height: auto;
-    .background-cover;
+    .background-contain;
+    background-repeat: no-repeat;
     background-position: center;
     background-image: url('../img/portfolio-thumb/T_C_Composed.jpg');
     text-align: center;
@@ -355,26 +356,7 @@ header {
     padding-left:0;
 }
 
-// Button Styles
-.btn-default {
-    .button-variant(@theme-dark;white;white);
-}
 
-.btn-primary {
-    .button-variant(white;@theme-primary;@theme-primary);
-}
-
-.btn {
-    .sans-serif-font;
-    border: none;
-    border-radius: 300px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.btn-xl {
-    padding: 15px 30px;
-}
 
 // Extras
 // -- Highlight Color Customization
@@ -496,6 +478,23 @@ div[class^="col-"] {
     cursor: pointer;
 }
 
+.button-nobutton {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    /*background: #EEE;*/
+    border: none;
+    border-radius: 7px;
+    /*background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );*/
+    color: #222;
+    font-weight: 500;
+    text-shadow: 0 1px white;
+    cursor: pointer;
+    height:150px;
+    width:150px;
+    overflow: hidden;
+}
+
 .button:hover {
     background-color: #8CF;
     text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
@@ -523,6 +522,50 @@ div[class^="col-"] {
     display: none;
 }
 /* ---- button ---- */
+
+// Button Styles
+.btn-default {
+    .button-variant(@theme-dark;white;white);
+}
+
+.btn-primary {
+    .button-variant(white;@theme-primary;@theme-primary);
+}
+
+.btn {
+    .sans-serif-font;
+    border: none;
+    border-radius: 300px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.img-button
+{
+    height:150px;
+    width:150px;
+    overflow: hidden;
+
+
+    img{
+        height:100px;
+        width: 100px;
+    }
+}
+
+.button-half
+{
+    height:55px;
+    width:100px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 55px;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+}
 
 /* ---- button-group ---- */
 .button-group{

@@ -52,7 +52,7 @@
                         <a class="page-scroll" href="#home">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#bioResume">Bio/Resume</a>
+                        <a class="page-scroll" href="#exhibitions">Exhibitions</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
@@ -61,7 +61,7 @@
                         <a class="page-scroll" href="#artistStatement">Artist Statement</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#exhibitions">Exhibitions</a>
+                        <a class="page-scroll" href="#bioResume">Bio/Resume</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#purchase">Purchase Info</a>
@@ -92,48 +92,78 @@
     </header>
     <!-- HOME -->
 
-    <!-- BIORESUME -->
-    <section id="bioResume">
+    <!-- EXHIBITIONS -->
+    <section id="exhibitions" class="bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p>
-                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                        <a href="mailto:your-email@your-domain.com">email@email.com</a>
-                    </p>
-
-                    <p>
-                        <i class="fa fa-book fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                        <a href="image/Buth-FurnessCart_biosketch_April2014.pdf" target="_blank">Biosketch</a>
-                    </p>
-
-                    <p>
-                        <i class="fa fa-facebook-official fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                        <a href="http://www.facebook.com/#!/profile.php?id=1525519574" target="_blank">Facebook</a>
-                    </p>
-
-                    <p>
-                        <i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                        <a href="http://www.linkedin.com/pub/christine-buth-furness/11/450/892" target="_blank">LinkedIn</a>
-                    </p>
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Exhibitions</h2>
+                    <hr class="primary">
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row" id="exhibitions-div">
+                <!-- content is dynamically loaded-->
+            </div>
+        </div>
     </section>
-    <!-- BIORESUME -->
-
+    <!-- EXHIBITIONS -->
 
     <!-- PORTFOLIO -->
     <section class="no-padding bg-dark" id="portfolio">
         <div class="container-fluid">
             <div class="row" id="portfolio-image-template-div">
+                <br>
+
+                <br>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <span>OLD WAY</span>
                     <div class="button-group filters-button-group">
-                        <button class="button is-checked" data-filter="*">Show All</button>
                         <button class="button" data-filter=".Trees-and-Light">Trees and Light</button>
                         <button class="button" data-filter=".Redwoods-and-Water">Redwoods and Water</button>
                         <button class="button" data-filter=".Horizon-Lines">Horizon Lines</button>
                         <button class="button" data-filter=".Empty-Spaces">Empty Spaces</button>
+                        <button class="button" data-filter="*">View All</button>
+                        <button class="button is-checked" data-filter="none">View None</button>
+                    </div>
+                </div>
+                <br>
+
+                <br>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <span>NEW WAY</span>
+                    <div class="div-group filters-div-group">
+                        <div class="grid">
+                            <div class="button img-button" data-filter=".Trees-and-Light">
+                                <a href="img/portfolio-full/Blue_Light.jpg" title="Blue Light" data-filter=".Trees-and-Light">
+                                    <img src="img/portfolio-thumb/Blue_Light.jpg" data-filter=".Trees-and-Light"></a>
+                                <div data-filter=".Trees-and-Light">Trees and Light</div>
+                            </div>
+                            <div class="button img-button" data-filter=".Redwoods-and-Water">
+                                <a href="img/portfolio-full/Blue_Light.jpg" title="Blue Light" data-filter=".Redwoods-and-Water">
+                                    <img src="img/portfolio-thumb/Blue_Light.jpg" data-filter=".Redwoods-and-Water"></a>
+                                <div data-filter=".Redwoods-and-Water">Redwoods and Water</div>
+                            </div>
+                            <div class="button img-button" data-filter=".Horizon-Lines">
+                                <a href="img/portfolio-full/Blue_Light.jpg" title="Blue Light" data-filter=".Horizon-Lines">
+                                    <img src="img/portfolio-thumb/Blue_Light.jpg" data-filter=".Horizon-Lines"></a>
+                                <div data-filter=".Horizon-Lines">Horizon Lines</div>
+                            </div>
+                            <div class="button img-button" data-filter=".Empty-Spaces">
+                                <a href="img/portfolio-full/Blue_Light.jpg" title="Blue Light" data-filter=".Empty-Spaces">
+                                    <img src="img/portfolio-thumb/Blue_Light.jpg" data-filter=".Empty-Spaces"></a>
+                                <div data-filter=".Empty-Spaces">Empty Spaces</div>
+                            </div>
+                            <div class="button-nobutton" data-filter="*">
+                                <div class="button button-half">
+                                    <div data-filter="*">View All</div>
+                                </div>
+                                <div class="button button-half" data-filter="none">
+                                    <div data-filter="none">Collapse</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="container-fluid">
@@ -163,24 +193,27 @@
                     <h2 class="section-heading">Artist Statement</h2>
                     <hr class="light">
                     <p class="text-faded">
-                        I paint the figurative landscape as if it is a proscenium stage - a lit space directly facing the audience.
-                        The horizon line separates the sky from the land and these elements frame the tree and the human figure.
-                        All appear as actors on the stage. Light, as it frames and highlights the tree or the figure, directs the viewer's eye.
+                        I paint images that suggest a presence in an environment or an absence of one and evoke an emotional response.
+                        Art making is an activity that documents my creative and critical thinking and takes the form of visual poetry.
+                        My works are abstracted portraits of places experienced, spaces navigated and those imagined.
+                        Layers of water-based pigment build the color intensity; define the form and allow light as a subject to give meaning.
+                        Each deep, rich hue is created through a series of washes, one transparent layer over another building in intensity until the maximum color saturation is reached.
 
-                        A solo tree, when present is brightly lit at center or stands aside waiting for its cue.
-                        In my images the tree symbolizes something strong and deeply rooted, a provider of shelter.
+                        <br><br>
+                        I always work in a series, some of which are entitled: “Redwoods and water loops”, “Empty spaces”, “Trees and light” and “Sky in a box”.
 
-                        The painted figure represents an individual I personally admire and depict in relationship with a fictional landscape.
-                        She boldly faces and engages the viewer or looks down and away.
-                        Placed in an interior space open to the sky, she finds relief in its beauty and absorbs the warm light.
-                        Molded into the landscape, he is represented only as a pair of hands folded along the horizon line.
-                        These paintings are my interpretations of the individual.
-
-                        In most recent work I am incorporating architectural elements, giving the impression of boxing in, or enclosing the sky.
-                        I paint the shapes, colors and patterns formed.
-
-                        I paint large watercolors on paper because of the responsiveness of the paint with the paper as the paint stains and becomes one with it.
-                        Each deep, rich hue is created through a series of washes, one transparent layer over another, built up until the intensity of the color is reached drawing the viewer in.
+                        <br><br>
+                        My camera is with me most days and is used as another tool for observing nature,
+                        but I never work directly from a photograph when I paint.
+                        In addition, I draw from a model every week, and this allows me to practice, develop and maintain a keen sense of observation and to successfully build values in a composition.
+                        Photographing and drawing the world around me are critical parts of my art making process.
+                        <br><br>
+                        Even though watercolor is my primary medium, I was formally trained in fine art printmaking,
+                        and it took me several years to learn to paint like a painter, not like a printmaker. In 2015 I had a retrospective exhibition,
+                        which included drawings, prints and paintings from the last three decades.
+                        This awakened a desire to again allow the white of the paper to become a powerful positive shape in my paintings,
+                        reexamining the dialog between positive and negative shapes. My new series is appropriately called, “In Between”,
+                        as I spend half the year in northern California and half the year in southeastern Wisconsin.
                     </p>
                     <!--<a href="#" class="btn btn-default btn-xl">Get Started!</a>-->
                 </div>
@@ -189,23 +222,36 @@
     </section>
     <!-- ARTISTSTATEMENT -->
 
-    <!-- EXHIBITIONS -->
-    <section id="exhibitions" class="bg-dark">
+
+    <!-- BIORESUME -->
+    <section id="bioResume">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Current Exhibitions</h2>
-                    <hr class="primary">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p>
+                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <a href="mailto:your-email@your-domain.com">email@email.com</a>
+                    </p>
+
+                    <p>
+                        <i class="fa fa-book fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <a href="image/Buth-FurnessCart_biosketch_April2014.pdf" target="_blank">Biosketch</a>
+                    </p>
+
+                    <p>
+                        <i class="fa fa-facebook-official fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <a href="http://www.facebook.com/#!/profile.php?id=1525519574" target="_blank">Facebook</a>
+                    </p>
+
+                    <p>
+                        <i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <a href="http://www.linkedin.com/pub/christine-buth-furness/11/450/892" target="_blank">LinkedIn</a>
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row" id="exhibitions-div">
-                <!-- content is dynamically loaded-->
-            </div>
-        </div>
     </section>
-    <!-- EXHIBITIONS -->
+    <!-- BIORESUME -->
 
     <!-- PURCHASE -->
     <aside class="bg-primary" id="purchase">
@@ -249,6 +295,8 @@
                         <p>
                             <i class="fa fa-globe wow bounceIn" data-wow-delay=".1s"></i>
                             <a href="http://www.wisconsinvisualartists.com" target="_blank">Wisconsin Visual Artists</a>
+                            <br>
+                            <a href="http://wisconsinvisualartists.com/public/article_full.php?user_id=661" target="_blank">February 2016 Issue</a>
                             <br>
                             <i>Past board member and lifetime member</i>
                         </p>

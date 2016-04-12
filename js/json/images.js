@@ -1,78 +1,5 @@
 {
-    "photos": [{
-        "srcthumb": "http://placehold.it/700x522",
-        "srcfull": "http://placehold.it/400x300",
-        "title" : "Sky in a Box Series:  Yellow Tree with Aqua Blue",
-        "media" : "Watercolor on archival paper",
-        "size" : "22 x 30 in. unframed",
-        "category" : "Trees-and-Light",
-        "active" : false
-    },
-    {
-        "srcthumb": "http://placehold.it/700x921",
-        "srcfull": "http://placehold.it/400x300",
-        "title" : "Q. E. I.",
-        "media" : "Watercolor on archival paper",
-        "size" : "22 x 30 in. unframed",
-        "category" : "Trees-and-Light",
-        "active" : false
-    },
-    {
-        "srcthumb": "http://placehold.it/700x504",
-        "srcfull": "http://placehold.it/400x300",
-        "title" : "Trees Without Shadows",
-        "media" : "Watercolor on archival paper",
-        "size" : "30 x 22 in. unframed",
-        "category" : "Trees-and-Light",
-        "active" : false
-    },
-    {
-        "srcthumb": "http://placehold.it/700x551",
-        "srcfull": "http://placehold.it/400x300",
-        "title" : "Sky in a Box Series: Cornered with Winter White",
-        "media" : "Watercolor on archival paper",
-        "size" : "22 x 30 in. unframed",
-        "category" : "Trees-and-Light",
-        "active" : false
-    },
-    {
-        "srcthumb": "http://placehold.it/700x882",
-        "srcfull": "http://placehold.it/400x300",
-        "title" : "Sky in a Box Series:  Cornered with Clouds",
-        "media" : "Watercolor on archival paper",
-        "size" : "22 x 30 in. unframed",
-        "category" : "Trees-and-Light",
-        "active" : false
-    }
-    ,
-    {
-        "srcthumb": "http://placehold.it/700x506",
-        "srcfull": "http://placehold.it/400x300",
-        "title" : "Time Made for Golden Leaves and Red Shadows",
-        "media" : "Watercolor on archival paper",
-        "size" : "22 x 30 in. unframed",
-        "category" : "Trees-and-Light",
-        "active" : false
-    }
-    ,
-    {
-        "srcthumb": "http://placehold.it/700x957",
-        "srcfull": "http://placehold.it/400x300",
-        "title" : "Step Outside To Hear the Thaw of the Hail Storm",
-        "media" : "Watercolor on archival paper",
-        "size" : "30 x 22 in. unframed",
-        "category" : "Trees-and-Light",
-        "active" : false
-    },
-    {
-        "srcthumb": "http://placehold.it/700x522",
-        "srcfull": "http://placehold.it/400x300",
-        "title" : "Sky in a Box Series:  Yellow Tree with Aqua Blue",
-        "media" : "Watercolor on archival paper",
-        "size" : "22 x 30 in. unframed",
-        "category" : "Trees-and-Light",
-        "active" : false
-    },
+    "photos": [
     {
         "srcthumb": "http://placehold.it/700x634",
         "srcfull": "http://placehold.it/400x300",
@@ -82,16 +9,6 @@
         "category" : "Trees-and-Light",
         "active" : false
     },
-    {
-        "srcthumb": "http://placehold.it/700x880",
-        "srcfull": "http://placehold.it/400x300",
-        "title" : "Sky in a Box Series:  Yellow Tree with Aqua Blue",
-        "media" : "Watercolor on archival paper",
-        "size" : "22 x 30 in. unframed",
-        "category" : "Trees-and-Light",
-        "active" : false
-    }
-    ,
     {
         "srcthumb": "img/portfolio-thumb/",
         "srcfull": "img/portfolio-full/",
@@ -138,6 +55,7 @@
         "active" : true
     },
     {
+
         "srcthumb": "img/portfolio-thumb/Sky_in_Box_Series_Cornered_with_Clouds.jpg",
         "srcfull": "img/portfolio-full/Sky_in_Box_Series_Cornered_with_Clouds.jpg",
         "title" : "Sky in a Box Series:  Cornered with Clouds",
