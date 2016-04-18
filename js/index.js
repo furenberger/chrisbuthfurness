@@ -69,6 +69,7 @@ $( function(){
                 $('<div/>').prop('class','col-lg-3 col-md-6 text-center')
                     .append($('<div/>').prop('class','service-box')
                         .append($('<h3/>').html(exhibition.title).prop('class','exhibition-title'))
+                        .append($('<a/>').prop('title',exhibition.urlTitle).prop('href',exhibition.url).html(exhibition.urlTitle))
                         .append($('<p/>').html(exhibition.date).prop('class','text-muted exhibition-text'))
                         .append($('<p/>').html(exhibition.text).prop('class','exhibition-date')))
 
