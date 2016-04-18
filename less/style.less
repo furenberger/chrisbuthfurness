@@ -47,6 +47,46 @@ p {
     margin-bottom: 20px;
 }
 
+// Bootstrap Overrides
+.text-primary {
+    color: @theme-primary;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+
+
+// Extras
+// -- Highlight Color Customization
+::-moz-selection {
+    color: white;
+    text-shadow: none;
+    background: @theme-dark;
+}
+
+::selection {
+    color: white;
+    text-shadow: none;
+    background: @theme-dark;
+}
+
+img::selection {
+    color: white;
+    background: transparent;
+}
+
+img::-moz-selection {
+    color: white;
+    background: transparent;
+}
+
+body {
+    webkit-tap-highlight-color: @theme-dark;
+}
+
 .bg-primary {
     background-color: @theme-light;
 }
@@ -94,6 +134,7 @@ aside {
 .navbar-default {
     background-color: white;
     border-color: fade(@theme-dark, 5%);
+    opacity: .91111;
     .sans-serif-font;
     .transition-all;
     .navbar-header .navbar-brand {
@@ -131,7 +172,7 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color: transparent;
+        /*background-color: transparent;
         border-color: fade(white, 30%);
         .navbar-header .navbar-brand {
             color: fade(white, 70%);
@@ -147,6 +188,8 @@ aside {
                 color: white;
             }
         }
+        */
+
         &.affix {
             background-color: white;
             border-color: fade(@theme-dark, 5%);
@@ -210,6 +253,7 @@ aside {
 // Homepage Header
 
 header {
+    margin-top: 55px;
     position: relative;
     width: 100%;
     min-height: auto;
@@ -346,45 +390,7 @@ header {
     }
 }
 
-// Bootstrap Overrides
-.text-primary {
-    color: @theme-primary;
-}
 
-.no-gutter > [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
-}
-
-
-
-// Extras
-// -- Highlight Color Customization
-::-moz-selection {
-    color: white;
-    text-shadow: none;
-    background: @theme-dark;
-}
-
-::selection {
-    color: white;
-    text-shadow: none;
-    background: @theme-dark;
-}
-
-img::selection {
-    color: white;
-    background: transparent;
-}
-
-img::-moz-selection {
-    color: white;
-    background: transparent;
-}
-
-body {
-    webkit-tap-highlight-color: @theme-dark;
-}
 
 
 // USED TO SHOW BOOTSTRAP GRID
