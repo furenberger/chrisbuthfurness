@@ -407,6 +407,8 @@ div[class^="col-"] {
 /* ---- button ----- */
 .button {
   display: inline-block;
+  padding: 5px 15px;
+  margin-bottom: 10px;
   background: #EEE;
   border: none;
   border-radius: 7px;
@@ -559,18 +561,13 @@ fieldset[disabled] .btn-primary.active {
   text-transform: uppercase;
 }
 .img-button {
-  height: 175px;
-  width: 175px;
+  height: 150px;
+  width: 150px;
   overflow: hidden;
-  padding: 10px;
 }
 .img-button img {
-  height: 125px;
-  width: 125px;
-}
-.img-button .img-half {
-  height: 62px;
-  width: 125px;
+  height: 100px;
+  width: 100px;
 }
 .button-half {
   height: 55px;
