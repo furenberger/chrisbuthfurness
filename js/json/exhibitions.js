@@ -47,5 +47,14 @@
         "date": "",
         "text" : "N88 W16567 Main Street <br>Menomonee Falls, WI"
     }
+    ,
+    {
+        "title": "Gallery of Wisconsin Art's (GOWA) \"Wisconsin Landscape\"",
+        "url" : "https://galleryofwisconsinart.com/",
+        "urlTitle" : "Gallery of Wisconsin Art",
+        "active" : true,
+        "date": "Saturday, November 11 form 5-8 pm",
+        "text" : "N88 W16567 Main Street <br>Menomonee Falls, WI<br>It's a group show with many artists working in the genre.  Work is on display through December 30.  Please visit!" 
+    }
 ]}
 

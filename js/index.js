@@ -46,8 +46,8 @@ $( function(){
 
 
   var $grid;
-  var IMAGE_JSON = "js/json/images.js";
-    var EXHIBITIONS_JSON = "js/json/exhibitions.js";
+  var IMAGE_JSON = "js/json/images.js?q=1";
+    var EXHIBITIONS_JSON = "js/json/exhibitions.js?q=1";
 
     $.getJSON(EXHIBITIONS_JSON, function (json) {
         // Get a reference to the div anchor in the main DOM.
