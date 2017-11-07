@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
-    "connect": ">=3.4.1",
-    "grunt": ">=0.4.0",
-    "grunt-contrib-less": "^1.1.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "jit-grunt": "^0.9.1",
-    "serve-static": ">=1.10.2"
+    "connect": ">=3.6.5",
+    "grunt": ">=1.0.1",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "jit-grunt": "^0.10.0",
+    "serve-static": ">=1.13.1"
   }
 }

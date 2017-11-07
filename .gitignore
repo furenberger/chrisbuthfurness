@@ -39,3 +39,5 @@ jspm_packages
 .node_repl_history
 
 img/assets/
+node_modules/
+bower_components/
