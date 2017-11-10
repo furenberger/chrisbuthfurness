@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import Exhibitions from './exhibitions/exhibitions';
 
 import '../../less/style.less';
+import 'bootstrap/dist/css/bootstrap.css';
 
 // import mrSparkleImage from '../assets/mrSparkle.jpeg'; 
 

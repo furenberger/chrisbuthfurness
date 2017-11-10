@@ -41,3 +41,5 @@ jspm_packages
 img/assets/
 node_modules/
 bower_components/
+
+.secret

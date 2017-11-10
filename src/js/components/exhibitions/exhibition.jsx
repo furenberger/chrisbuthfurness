@@ -1,19 +1,21 @@
 import React from 'react';
+import { Card, CardImg, CardText, CardBody, CardLink,
+  CardTitle, CardSubtitle, Button, Col } from 'reactstrap';
 
 const Exhibition = ({exhibition}) => {
   return (
-    <div className='col-lg-3 col-md-6 text-center'>
-      <div className='service-box'>
-          <h3 className='exhibition-title'>{exhibition.title}</h3>
-          <a title={exhibition.urlTitle} href={exhibition.url}>{exhibition.urlTitle}</a>
-          <p className='text-muted exhibition-text'>{exhibition.date}</p>
-          
+    <Col xs="6">
+      <Card>
+        <CardBody>
+          <CardTitle className='text-center'>{exhibition.title}</CardTitle>
+          <CardLink href={exhibition.url}>{exhibition.urlTitle}</CardLink>
+          <CardText>{exhibition.date}</CardText>
+        </CardBody>
           {
             exhibition.text ? renderText(exhibition.text): null
           }
-
-      </div>
-    </div>
+      </Card>
+    </Col>
   )
 };
 
@@ -25,17 +27,17 @@ function renderText(texts) {
   }
 
   return (
-    <div>
+    <CardBody>
       {
         textArray.map(render)
       }
-    </div>
+    </CardBody>
   )
 };
 
 function render(record, index){
   return(
-    <p key={index} className='exhibition-text'>{record}</p>
+    <CardText key={index}>{record}</CardText>
   )
 }
 

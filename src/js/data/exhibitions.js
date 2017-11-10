@@ -15,7 +15,7 @@ function getExhibitions() {
         }
       },
       {
-          "title": "Exhibiting in Watercolor USA 2016",
+        "title": "Exhibiting in Watercolor USA 2016",
         "url" : "http://www.sgfmuseum.org/182/Watercolor-USA-2016",
         "urlTitle" : "Watercolor USA 2016",
         "active" : true,
