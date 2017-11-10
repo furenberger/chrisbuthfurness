@@ -46,3 +46,5 @@ bower_components/
 /build/app.bundle.js
 /build/index.js
 /build/style.bundle.css
+
+.secret
