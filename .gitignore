@@ -43,3 +43,6 @@ node_modules/
 bower_components/
 
 .secret
+/build/app.bundle.js
+/build/index.js
+/build/style.bundle.css

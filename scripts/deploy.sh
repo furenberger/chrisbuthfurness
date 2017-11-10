@@ -3,9 +3,9 @@
 echo $USER
 
 # Move to the build folder
-cd '../build/'
-pwd 
-
+ls 
+cd /home/travis/build/furenberger/chrisbuthfurness/build
+ls
 
 
 # FTP the files in the build folder to the environment you want
