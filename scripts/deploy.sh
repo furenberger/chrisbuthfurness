@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "ENVIRONMENT  FTP $1"
+echo "ENVIRONMENT FTP $1"
 
 echo $USER
 
@@ -8,8 +8,8 @@ echo $USER
 cd /home/travis/build/furenberger/chrisbuthfurness/build
 
 # FTP the files in the build folder to the environment you want
-ftp -inv $HOST <<EOF
-user $USER $PASSWORD
+ftp -inv ${HOST} <<EOF
+user ${USER} ${PASSWORD}
 cd test
 pwd
 ls

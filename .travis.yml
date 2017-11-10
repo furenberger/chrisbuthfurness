@@ -11,13 +11,12 @@ before_script:
 script:
   - npm run test
 
+# after_success:
+#   "curl --ftp-create-dirs -T /home/travis/build/furenberger/chrisbuthfurness/build/index.html -u ${USER}:${PASSWORD} ftp://${HOST}/test/index.html"
 
-after_success:
-  "curl --ftp-create-dirs -T /home/travis/build/furenberger/chrisbuthfurness/build/index.html -u ${USER}:${PASSWORD} ftp://${HOST}/test/index.html"
-  
-# deploy:
-#   skip_cleanup: true
-#   provider: script
-#   script: scripts/deploy.sh test
-#   on:
-#     branch: develop
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: scripts/deploy.sh
+  on:
+    branch: develop
