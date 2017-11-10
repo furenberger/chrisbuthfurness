@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "ENVIRONMENT  FTP $1"
+
 echo $USER
 
 # Move to the build folder 

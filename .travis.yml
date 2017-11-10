@@ -3,11 +3,20 @@ node_js:
   - "6.9.5"
 
 install:
-  npm install
+  - npm install
 
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: scripts/deploy.sh test
-  on:
-    branch: develop
+before_script:
+  - npm run build
+
+script:
+  - npm run test
+
+after_success:
+  "curl --ftp-create-dirs -T /home/travis/build/furenberger/chrisbuthfurness/build/index.html -u $USER:PASSWORD ftp://$HOST/test/index.html"
+  
+# deploy:
+#   skip_cleanup: true
+#   provider: script
+#   script: scripts/deploy.sh test
+#   on:
+#     branch: develop
