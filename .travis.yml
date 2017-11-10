@@ -15,8 +15,13 @@ script:
 #   "curl --ftp-create-dirs -T /home/travis/build/furenberger/chrisbuthfurness/build/index.html -u ${USER}:${PASSWORD} ftp://${HOST}/test/index.html"
 
 deploy:
-  skip_cleanup: true
-  provider: script
-  script: scripts/deploy.sh
-  on:
-    branch: develop
+  - provider: script
+    skip_cleanup: true
+    script: scripts/deploy.sh develop
+    on:
+      branch: develop
+  - provider: script
+    skip_cleanup: true
+    script: scripts/deploy.sh production
+    on:
+      branch: master
