@@ -2,23 +2,19 @@
 
 echo $USER
 
-# Move to the build folder
-ls 
+# Move to the build folder 
 cd /home/travis/build/furenberger/chrisbuthfurness/build
-ls
-
 
 # FTP the files in the build folder to the environment you want
-# ftp -inv $HOST <<EOF
-# user $USER $PASSWORD
-# cd test
-# pwd
-# ls
-# mput *
-# ls
-# bye
-# EOF
-
+ftp -inv $HOST <<EOF
+user $USER $PASSWORD
+cd test
+pwd
+ls
+mput *
+ls
+bye
+EOF
 
 # Exit the script
 exit 0
